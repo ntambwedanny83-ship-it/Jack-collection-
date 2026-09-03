@@ -1,0 +1,380 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f5f1;
+    color: #111;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 7%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.65)
+        ),
+        linear-gradient(135deg, #333, #111);
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: clamp(55px, 10vw, 110px);
+    line-height: 0.9;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+
+.hero p {
+    max-width: 500px;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background: #ddd;
+}
+
+
+/* COLLECTION */
+
+.collection {
+    padding: 100px 7%;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.section-title p {
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+
+.section-title h2 {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.product-card {
+    background: white;
+    overflow: hidden;
+}
+
+
+.product-image {
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+.image-one {
+    background: linear-gradient(135deg, #777, #111);
+}
+
+
+.image-two {
+    background: linear-gradient(135deg, #222, #888);
+}
+
+
+.image-three {
+    background: linear-gradient(135deg, #999, #222);
+}
+
+
+.product-info {
+    padding: 25px;
+}
+
+
+.product-info h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+
+.product-info p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.product-info button {
+    padding: 11px 18px;
+    background: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 120px 7%;
+    background: #111;
+    color: white;
+}
+
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.about h2 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+
+.about p:not(.small-title) {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding: 100px 7%;
+}
+
+
+.contact h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.contact > p:not(.small-title) {
+    max-width: 550px;
+    margin: 0 auto 30px;
+    color: #666;
+}
+
+
+.whatsapp {
+    display: inline-block;
+    padding: 16px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.whatsapp:hover {
+    opacity: 0.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 45px 20px;
+}
+
+
+footer h3 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    color: #aaa;
+}
+
+
+.copyright {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    nav {
+        gap: 15px;
+    }
+
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    .hero {
+        min-height: 80vh;
+        padding: 60px 7%;
+    }
+
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+
+    .product-image {
+        height: 300px;
+    }
+
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+
+    .about h2 {
+        font-size: 38px;
+    }
+
+
+    .contact h2 {
+        font-size: 35px;
+    }
+
+}
